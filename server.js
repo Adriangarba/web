@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
+app.get("/cron", (req,res) => {
+    res.send("ok")
+})
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
