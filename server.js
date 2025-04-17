@@ -24,7 +24,7 @@ const keepAwake = async () => {
         console.error(error)
     }
 }
-const job = cron.schedule("*/1 * * * *", keepAwake)
+const job = cron.schedule("*/10 * * * *", keepAwake)
 
 
 
