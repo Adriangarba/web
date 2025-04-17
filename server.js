@@ -18,7 +18,7 @@ app.get("/cron", (req, res) => {
 
 const keepAwake = async () => {
     try {
-        const response = await axios.get("http://localhost:3000/cron")
+        const response = await axios.get("https://web-yqu2.onrender.com/cron")
         console.log(response.data)
     } catch (error) {
         console.error(error)
